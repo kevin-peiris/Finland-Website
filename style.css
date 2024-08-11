@@ -31,9 +31,8 @@
 }
 
 #heading {
-    z-index: 2;
     position: absolute;
-    top: 200px;
+    top: 400px;
     left: 0;
     width: 100%;
     text-align: center; /* Centers the text horizontally */
