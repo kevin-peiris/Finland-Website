@@ -32,13 +32,13 @@
 
 #heading {
     position: absolute; /* Overlay properly */
-    top: 40%; /* Center vertically */
+    top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Perfect centering */
     width: 100%;
     text-align: center;
     color: white; /* Ensure text is visible */
-    z-index: 1000; /* Ensure heading is above dropdowns (Bootstrap uses 1000 for dropdowns) */
+    z-index: 1; /* Ensure heading is above dropdowns (Bootstrap uses 1000 for dropdowns) */
 }
 
 @media (max-width: 768px) {
