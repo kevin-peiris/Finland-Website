@@ -1,0 +1,55 @@
+.text-center {
+    color: white; /* Ensures text is white */
+}
+
+.display-1 {
+    font-size: 5rem; /* Adjust font size for larger screens */
+}
+
+.lead {
+    font-size: 2.5rem; /* Adjust font size for h3 */
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3rem; /* Slightly smaller text for tablets */
+    }
+
+    .lead {
+        font-size: 1.25rem; /* Adjust font size for h3 */
+    }
+}
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 2rem; /* Smaller text for mobile screens */
+    }
+
+    .lead {
+        font-size: 1rem; /* Adjust font size for h3 */
+    }
+}
+
+#heading {
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centers the text horizontally */
+    padding: 0 20px; /* Adds padding on the sides */
+}
+
+@media (max-width: 768px) {
+    #heading {
+        top: 150px; /* Adjusts the top position for smaller screens */
+        padding: 0 15px; /* Adjusts padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    #heading {
+        top: 100px; /* Further adjusts the top position for very small screens */
+        padding: 0 10px; /* Further adjusts padding for very small screens */
+    }
+}
