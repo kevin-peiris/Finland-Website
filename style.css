@@ -31,24 +31,33 @@
 }
 
 #heading {
-    position: absolute;
-    top: 400px;
-    left: 0;
+    position: absolute; /* Overlay properly */
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
     width: 100%;
-    text-align: center; /* Centers the text horizontally */
-    padding: 0 20px; /* Adds padding on the sides */
+    text-align: center;
+    color: white; /* Ensure text is visible */
+    z-index: 1000; /* Ensure heading is above dropdowns (Bootstrap uses 1000 for dropdowns) */
 }
 
 @media (max-width: 768px) {
     #heading {
-        top: 150px; /* Adjusts the top position for smaller screens */
-        padding: 0 15px; /* Adjusts padding for smaller screens */
+        top: 25%; /* Adjust for smaller screens */
+        transform: translate(-50%, -25%); /* Adjust centering */
+        padding: 0 15px; /* Adjust padding if needed */
     }
 }
 
 @media (max-width: 576px) {
     #heading {
-        top: 100px; /* Further adjusts the top position for very small screens */
-        padding: 0 10px; /* Further adjusts padding for very small screens */
+        top: 20%; /* Further adjust for very small screens */
+        transform: translate(-50%, -10%); /* Adjust centering */
+        padding: 0 10px; /* Further adjust padding if needed */
     }
+}
+
+
+.navbar .dropdown-menu {
+    z-index: 1050; /* Higher z-index to ensure it appears above the heading */
 }
