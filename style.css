@@ -48,7 +48,7 @@
 
 @media (max-width: 576px) {
     #heading {
-        top: 10%; /* Further adjust for very small screens */
+        top: 15%; /* Further adjust for very small screens */
         transform: translate(-50%, -10%); /* Adjust centering */
         padding: 0 10px; /* Further adjust padding if needed */
     }
