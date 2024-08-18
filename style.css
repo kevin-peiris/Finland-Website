@@ -1,9 +1,6 @@
-.text-center {
-    color: white; /* Ensures text is white */
-}
-
 .display-1 {
     font-size: 5rem; /* Adjust font size for larger screens */
+    text-shadow: 9px 0px 10px #000000;
 }
 
 .lead {
